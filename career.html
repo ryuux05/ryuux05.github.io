@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>career - ryuux05</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+    </button>
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="nav-link">home</a>
+            <span class="nav-separator">/</span>
+            <a href="projects.html" class="nav-link">projects</a>
+            <span class="nav-separator">/</span>
+            <a href="career.html" class="nav-link active">career</a>
+        </nav>
+
+        <header class="header">
+            <div class="terminal-header">
+                <span class="prompt">$</span> cat career.md
+            </div>
+            <h1 class="name">career</h1>
+            <p class="tagline">// Where I've been, what I've built</p>
+        </header>
+
+        <section class="section career">
+            <div class="content">
+                <div class="career-item">
+                    <div class="career-header">
+                        <h3 class="career-title">Backend Engineer / Web3 Engineer</h3>
+                        <span class="career-company">Sushi Top Marketing</span>
+                        <span class="career-period">2023 - Present</span>
+                    </div>
+                    <p class="career-description">
+                        Part of a fast-paced startup that scaled from seed to Series A in 2 years. Built high-throughput services in NestJS/TypeScript, Built custom indexer for company use. Architect and scale analytic systems. Manage some of the company infrastructure
+                    </p>
+                    <div class="career-highlights">
+                        <h4 class="highlights-title">Responsibility:</h4>
+                        <ul class="highlights-list">
+                            <li>Architected & shipped a NestJS (TypeScript) RESTful NFT distributing backend that processed millions in distributing NFT to users. Designed a caching system that reduces load time by 90%  (3 s → 0.3 s).
+                            </li>
+                            <li>Architected & scale analytic service to handle millions of record</li>
+                            <li>Implemented company project dashboard which reduce toil by 60 %.
+                            </li>
+                            <li>Designed and maintained production APIs, composed a service-oriented architecture and documented service contracts for cross-team use.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="career-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>
+                <span class="prompt">$</span> cd ..
+                <span class="cursor">_</span>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

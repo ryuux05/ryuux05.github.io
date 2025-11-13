@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects - ryuux05</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+    </button>
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="nav-link">home</a>
+            <span class="nav-separator">/</span>
+            <a href="projects.html" class="nav-link active">projects</a>
+            <span class="nav-separator">/</span>
+            <a href="career.html" class="nav-link">career</a>
+        </nav>
+
+        <header class="header">
+            <div class="terminal-header">
+                <span class="prompt">$</span> ls projects/
+            </div>
+            <h1 class="name">projects</h1>
+            <p class="tagline">// Things I've built and shipped</p>
+        </header>
+
+        <section class="section projects">
+            <div class="content">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <h3 class="project-title">
+                        <span class="prompt">&gt;</span> godex
+                    </h3>
+                    <p class="project-description">
+                        godex is a Go SDK for indexing and processing blockchain data across multiple chains.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ryuux05/godex" target="_blank" class="project-link">github</a>
+                        <span class="link-separator">•</span>
+                        <a href="godex.html" class="project-link">live</a>
+                    </div>
+                </div>
+
+                <!-- Project 2
+                <div class="project-item">
+                    <h3 class="project-title">
+                        <span class="prompt">&gt;</span> gotrade
+                    </h3>
+                    <p class="project-description">
+                        Another project description. Highlight key features, challenges overcome, or technologies used.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Kafka</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="project-link">github</a>
+                    </div>
+                </div> -->
+
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>
+                <span class="prompt">$</span> cd ..
+                <span class="cursor">_</span>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
