@@ -15,13 +15,14 @@
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <span class="theme-icon">◐</span>
     </button>
+    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
     <div class="container">
         <nav class="nav">
-            <a href="index.html" class="nav-link">home</a>
+            <a href="index.html" class="nav-link" data-i18n="nav.home">home</a>
             <span class="nav-separator">/</span>
-            <a href="projects.html" class="nav-link">projects</a>
+            <a href="projects.html" class="nav-link" data-i18n="nav.projects">projects</a>
             <span class="nav-separator">/</span>
-            <a href="career.html" class="nav-link">career</a>
+            <a href="career.html" class="nav-link" data-i18n="nav.career">career</a>
         </nav>
 
         <header class="header">
@@ -29,21 +30,21 @@
                 <span class="prompt">$</span> cat godex/README.md
             </div>
             <h1 class="name">godex</h1>
-            <p class="tagline">// A high-performance blockchain indexing SDK written in Go</p>
+            <p class="tagline" data-i18n="godex.tagline">// A high-performance blockchain indexing SDK written in Go</p>
             <div style="margin-top: 1rem;">
-                <span class="tech-tag" style="background-color: var(--accent-color, #ff6b6b); color: white; opacity: 0.9;">under development</span>
+                <span class="tech-tag" style="background-color: var(--accent-color, #ff6b6b); color: white; opacity: 0.9;" data-i18n="godex.status">under development</span>
             </div>
         </header>
 
         <section class="section project-overview">
-            <h2 class="section-title"><span class="prompt">&gt;</span> overview</h2>
+            <h2 class="section-title"><span class="prompt">&gt;</span> <span data-i18n="godex.overview.title">overview</span></h2>
             <div class="content">
-                <p>
+                <p data-i18n="godex.overview.p1">
                     godex is a production-ready SDK designed for building robust blockchain indexers that process EVM-compatible blockchain events. 
                     It provides a comprehensive solution for indexing multiple chains simultaneously with automatic reorg handling, flexible event decoding, 
                     and high-performance concurrent processing.
                 </p>
-                <p>
+                <p data-i18n="godex.overview.p2">
                     Built with Go, godex offers developers a powerful toolkit to create reliable indexers that can handle the complexities of blockchain 
                     data processing, including chain reorganizations, multi-chain support, and efficient event filtering.
                 </p>
@@ -51,42 +52,42 @@
         </section>
 
         <section class="section project-installation">
-            <h2 class="section-title"><span class="prompt">&gt;</span> installation</h2>
+            <h2 class="section-title"><span class="prompt">&gt;</span> <span data-i18n="godex.installation.title">installation</span></h2>
             <div class="content">
-                <p>Install godex using Go modules:</p>
+                <p data-i18n="godex.installation.p1">Install godex using Go modules:</p>
                 <div class="content code-block" style="margin-top: 1rem;">
                     <pre><code>go get github.com/ryuux05/godex</code></pre>
                 </div>
                 <p style="margin-top: 1rem;">
-                    For detailed documentation, examples, and usage instructions, visit the 
+                    <span data-i18n="godex.installation.p2">For detailed documentation, examples, and usage instructions, visit the</span> 
                     <a href="https://github.com/ryuux05/godex" target="_blank" style="color: var(--accent-color, #ff6b6b); text-decoration: underline;">GitHub repository</a>.
                 </p>
             </div>
         </section>
 
         <section class="section project-features">
-            <h2 class="section-title"><span class="prompt">&gt;</span> features</h2>
+            <h2 class="section-title"><span class="prompt">&gt;</span> <span data-i18n="godex.features.title">features</span></h2>
             <div class="content">
                 <ul class="interests-list">
-                    <li><span class="bullet">•</span> <strong>Multi-Chain Support:</strong> Index events across multiple EVM-compatible chains simultaneously with independent configuration per chain</li>
-                    <li><span class="bullet">•</span> <strong>Automatic Reorg Handling:</strong> Built-in detection and rollback for blockchain reorganizations, ensuring data consistency</li>
-                    <li><span class="bullet">•</span> <strong>Flexible Event Decoding:</strong> Register multiple ABIs with named identifiers for explicit event decoding and type-safe data access</li>
-                    <li><span class="bullet">•</span> <strong>High Performance:</strong> Concurrent fetching and processing with configurable worker pools for optimal throughput</li>
-                    <li><span class="bullet">•</span> <strong>Production Ready:</strong> Comprehensive error handling, retry mechanisms, rate limiting, and state management</li>
-                    <li><span class="bullet">•</span> <strong>Flexible Fetching:</strong> Support for both log-based and receipt-based fetching strategies</li>
-                    <li><span class="bullet">•</span> <strong>Topic Filtering:</strong> Efficient event filtering using function signatures or topic hashes</li>
+                    <li><span class="bullet">•</span> <strong data-i18n="godex.features.1">Multi-Chain Support: Index events across multiple EVM-compatible chains simultaneously with independent configuration per chain</strong></li>
+                    <li><span class="bullet">•</span> <strong data-i18n="godex.features.2">Automatic Reorg Handling: Built-in detection and rollback for blockchain reorganizations, ensuring data consistency</strong></li>
+                    <li><span class="bullet">•</span> <strong data-i18n="godex.features.3">Flexible Event Decoding: Register multiple ABIs with named identifiers for explicit event decoding and type-safe data access</strong></li>
+                    <li><span class="bullet">•</span> <strong data-i18n="godex.features.4">High Performance: Concurrent fetching and processing with configurable worker pools for optimal throughput</strong></li>
+                    <li><span class="bullet">•</span> <strong data-i18n="godex.features.5">Production Ready: Comprehensive error handling, retry mechanisms, rate limiting, and state management</strong></li>
+                    <li><span class="bullet">•</span> <strong data-i18n="godex.features.6">Flexible Fetching: Support for both log-based and receipt-based fetching strategies</strong></li>
+                    <li><span class="bullet">•</span> <strong data-i18n="godex.features.7">Topic Filtering: Efficient event filtering using function signatures or topic hashes</strong></li>
                 </ul>
             </div>
         </section>
 
         <section class="section project-architecture">
-            <h2 class="section-title"><span class="prompt">&gt;</span> architecture</h2>
+            <h2 class="section-title"><span class="prompt">&gt;</span> <span data-i18n="godex.architecture.title">architecture</span></h2>
             <div class="content">
-                <p>The SDK consists of three main components working together:</p>
+                <p data-i18n="godex.architecture.intro">The SDK consists of three main components working together:</p>
                 
                 <div class="career-item" style="margin-top: 1.5rem;">
-                    <h3 class="career-title" style="margin-bottom: 0.5rem;">Processor</h3>
-                    <p class="career-description">
+                    <h3 class="career-title" style="margin-bottom: 0.5rem;" data-i18n="godex.architecture.processor">Processor</h3>
+                    <p class="career-description" data-i18n="godex.architecture.processor.desc">
                         The Processor manages block fetching, log retrieval, and reorg detection. It coordinates multiple workers to fetch logs 
                         concurrently while maintaining ordered processing through an arbiter pattern. Handles state management and ensures data 
                         consistency across chain reorganizations.
@@ -94,8 +95,8 @@
                 </div>
 
                 <div class="career-item" style="margin-top: 1.5rem;">
-                    <h3 class="career-title" style="margin-bottom: 0.5rem;">Decoder</h3>
-                    <p class="career-description">
+                    <h3 class="career-title" style="margin-bottom: 0.5rem;" data-i18n="godex.architecture.decoder">Decoder</h3>
+                    <p class="career-description" data-i18n="godex.architecture.decoder.desc">
                         The Decoder transforms raw blockchain logs into structured events. It supports registering multiple ABIs with named 
                         identifiers, allowing explicit selection of which ABI to use for decoding. Designed to be resilient—returns nil for 
                         logs that cannot be decoded, allowing indexers to continue processing.
@@ -103,8 +104,8 @@
                 </div>
 
                 <div class="career-item" style="margin-top: 1.5rem;">
-                    <h3 class="career-title" style="margin-bottom: 0.5rem;">RPC Client</h3>
-                    <p class="career-description">
+                    <h3 class="career-title" style="margin-bottom: 0.5rem;" data-i18n="godex.architecture.rpc">RPC Client</h3>
+                    <p class="career-description" data-i18n="godex.architecture.rpc.desc">
                         The RPC client handles communication with blockchain nodes, including automatic retry logic, rate limiting, and error 
                         handling. Supports configurable rate limits to respect provider constraints while maximizing throughput.
                     </p>
@@ -113,24 +114,24 @@
         </section>
 
         <section class="section project-reorg">
-            <h2 class="section-title"><span class="prompt">&gt;</span> reorg handling</h2>
+            <h2 class="section-title"><span class="prompt">&gt;</span> <span data-i18n="godex.reorg.title">reorg handling</span></h2>
             <div class="content">
-                <p>
+                <p data-i18n="godex.reorg.intro">
                     The SDK automatically detects blockchain reorganizations by comparing parent block hashes. When a reorg is detected:
                 </p>
                 <ul class="interests-list">
-                    <li><span class="bullet">1.</span> The processor identifies the common ancestor block</li>
-                    <li><span class="bullet">2.</span> Rolls back any processed state beyond the ancestor</li>
-                    <li><span class="bullet">3.</span> Restarts indexing from the ancestor block</li>
+                    <li><span class="bullet">1.</span> <span data-i18n="godex.reorg.1">The processor identifies the common ancestor block</span></li>
+                    <li><span class="bullet">2.</span> <span data-i18n="godex.reorg.2">Rolls back any processed state beyond the ancestor</span></li>
+                    <li><span class="bullet">3.</span> <span data-i18n="godex.reorg.3">Restarts indexing from the ancestor block</span></li>
                 </ul>
-                <p style="margin-top: 1rem;">
+                <p style="margin-top: 1rem;" data-i18n="godex.reorg.conclusion">
                     This ensures data consistency even during chain reorganizations, a critical feature for production indexers.
                 </p>
             </div>
         </section>
 
         <section class="section project-tech">
-            <h2 class="section-title"><span class="prompt">&gt;</span> technologies</h2>
+            <h2 class="section-title"><span class="prompt">&gt;</span> <span data-i18n="godex.tech.title">technologies</span></h2>
             <div class="content">
                 <div class="project-tech">
                     <span class="tech-tag">Go</span>
@@ -142,11 +143,11 @@
         </section>
 
         <section class="section project-links">
-            <h2 class="section-title"><span class="prompt">&gt;</span> links</h2>
+            <h2 class="section-title"><span class="prompt">&gt;</span> <span data-i18n="godex.links.title">links</span></h2>
             <div class="content">
                 <div class="contact-grid">
                     <a href="https://github.com/ryuux05/godex" target="_blank" class="contact-link">
-                        <span class="command">github</span>
+                        <span class="command" data-i18n="godex.links.github">github</span>
                         <span class="arrow">→</span>
                         <span class="value">github.com/ryuux05/godex</span>
                     </a>
@@ -156,7 +157,7 @@
 
         <footer class="footer">
             <p>
-                <span class="prompt">$</span> cd ..
+                <span class="prompt">$</span> <span data-i18n="common.footer">cd ..</span>
                 <span class="cursor">_</span>
             </p>
         </footer>

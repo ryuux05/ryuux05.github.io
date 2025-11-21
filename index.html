@@ -15,13 +15,14 @@
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <span class="theme-icon">◐</span>
     </button>
+    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
     <div class="container">
         <nav class="nav">
-            <a href="index.html" class="nav-link active">home</a>
+            <a href="index.html" class="nav-link active" data-i18n="nav.home">home</a>
             <span class="nav-separator">/</span>
-            <a href="projects.html" class="nav-link">projects</a>
+            <a href="projects.html" class="nav-link" data-i18n="nav.projects">projects</a>
             <span class="nav-separator">/</span>
-            <a href="career.html" class="nav-link">career</a>
+            <a href="career.html" class="nav-link" data-i18n="nav.career">career</a>
         </nav>
 
         <header class="header">
@@ -29,24 +30,24 @@
                 <span class="prompt">$</span> whoami
             </div>
             <h1 class="name">ryuux05</h1>
-            <p class="tagline">// Looking for a problem for a solution.</p>
+            <p class="tagline" data-i18n="index.tagline">// Looking for a problem for a solution.</p>
         </header>
 
         <section class="section about">
-            <h2 class="section-title"><span class="prompt">&gt;</span> about.txt</h2>
+            <h2 class="section-title"><span class="prompt">&gt;</span> <span data-i18n="index.about.title">about.txt</span></h2>
             <div class="content">
-                <p>Back-end engineer with 3 years of experience and deep blockchain/EVM expertise. I was part of a fast-paced startup journey that scaled from seed to Series A in 2 years, where I built high-throughput services in NestJS/TypeScript and Go, designed and operated PoS validator infrastructure, and built custom ENS resolver integrations.</p>
-                <p>I specialize in Golang, PostgreSQL, and modular system design—think clean architecture, DDD, and event-driven patterns. I adapt quickly to new stacks and domains, always focusing on building secure, stable, and observable distributed systems.</p>
-                <p>Beyond pure development, I have a big interest in collaborating on diverse projects outside the traditional tech space. I love applying my unique sense and developer approach to solve problems in unconventional domains—let's build something interesting together!</p>
+                <p data-i18n="index.about.p1">Back-end engineer with 3 years of experience and deep blockchain/EVM expertise. I was part of a fast-paced startup journey that scaled from seed to Series A in 2 years, where I built high-throughput services in NestJS/TypeScript and Go, designed and operated PoS validator infrastructure, and built custom ENS resolver integrations.</p>
+                <p data-i18n="index.about.p2">I specialize in Golang, PostgreSQL, and modular system design—think clean architecture, DDD, and event-driven patterns. I adapt quickly to new stacks and domains, always focusing on building secure, stable, and observable distributed systems.</p>
+                <p data-i18n="index.about.p3">Beyond pure development, I have a big interest in collaborating on diverse projects outside the traditional tech space. I love applying my unique sense and developer approach to solve problems in unconventional domains—let's build something interesting together!</p>
             </div>
         </section>
 
         <section class="section skills">
-            <h2 class="section-title"><span class="prompt">&gt;</span> skills.json</h2>
+            <h2 class="section-title"><span class="prompt">&gt;</span> <span data-i18n="index.skills.title">skills.json</span></h2>
             <div class="content code-block">
                 <pre><code>{
   "languages": ["Typescript", "Go", "C", "Solidity"],
-  "note": "I prefer strongly typed languages",
+  "note": "<span data-i18n="index.skills.note">I prefer strongly typed languages</span>",
   "frameworks": ["Nestjs", "Express", "Gin"],
   "databases_caching": ["PostgreSQL", "DynamoDB", "Redis"],
   "cloud_devops": ["AWS (EKS, ECS, Lambda)", "Docker", "Terraform", "GitHub Actions", "Render"],
@@ -59,43 +60,43 @@
         </section>
 
         <section class="section interests">
-            <h2 class="section-title"><span class="prompt">&gt;</span> interests.md</h2>
+            <h2 class="section-title"><span class="prompt">&gt;</span> <span data-i18n="index.interests.title">interests.md</span></h2>
             <div class="content">
                 <ul class="interests-list">
-                    <li><span class="bullet">•</span> Building web applications and experimenting with new technologies</li>
-                    <li><span class="bullet">•</span> Contributing to open-source projects</li>
-                    <li><span class="bullet">•</span> Learning about system design and architecture</li>
-                    <li><span class="bullet">•</span> Automating workflows and improving efficiency</li>
+                    <li><span class="bullet">•</span> <span data-i18n="index.interests.1">Building web applications and experimenting with new technologies</span></li>
+                    <li><span class="bullet">•</span> <span data-i18n="index.interests.2">Contributing to open-source projects</span></li>
+                    <li><span class="bullet">•</span> <span data-i18n="index.interests.3">Learning about system design and architecture</span></li>
+                    <li><span class="bullet">•</span> <span data-i18n="index.interests.4">Automating workflows and improving efficiency</span></li>
                 </ul>
             </div>
         </section>
 
         <section class="section contact">
-            <h2 class="section-title"><span class="prompt">&gt;</span> contact.sh</h2>
+            <h2 class="section-title"><span class="prompt">&gt;</span> <span data-i18n="index.contact.title">contact.sh</span></h2>
             <div class="content">
                 <div class="contact-grid">
                     <a href="mailto:ryuux05@gmail.com" class="contact-link">
-                        <span class="command">email</span>
+                        <span class="command" data-i18n="index.contact.email">email</span>
                         <span class="arrow">→</span>
                         <span class="value">ryuux05@gmail.com</span>
                     </a>
                     <a href="https://github.com/ryuux05" target="_blank" class="contact-link">
-                        <span class="command">github</span>
+                        <span class="command" data-i18n="index.contact.github">github</span>
                         <span class="arrow">→</span>
                         <span class="value">github.com/ryuux05</span>
                     </a>
                     <a href="https://www.linkedin.com/in/bryanhirawan/" target="_blank" class="contact-link">
-                        <span class="command">linkedin</span>
+                        <span class="command" data-i18n="index.contact.linkedin">linkedin</span>
                         <span class="arrow">→</span>
                         <span class="value">Bryan Hirawan</span>
                     </a>
                     <a href="https://twitter.com/ryuux05" target="_blank" class="contact-link">
-                        <span class="command">twitter</span>
+                        <span class="command" data-i18n="index.contact.twitter">twitter</span>
                         <span class="arrow">→</span>
                         <span class="value">@ryuux05</span>
                     </a>
                     <a href="https://medium.com/@ryuux05" target="_blank" class="contact-link">
-                        <span class="command">medium</span>
+                        <span class="command" data-i18n="index.contact.medium">medium</span>
                         <span class="arrow">→</span>
                         <span class="value">medium.com/@ryuux05</span>
                     </a>
@@ -105,7 +106,7 @@
 
         <footer class="footer">
             <p>
-                <span class="prompt">$</span> git commit -S -m "Let's collaborate"
+                <span class="prompt">$</span> git commit -S -m "<span data-i18n="index.footer">Let's collaborate</span>"
                 <span class="cursor">_</span>
             </p>
         </footer>

@@ -15,13 +15,14 @@
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <span class="theme-icon">◐</span>
     </button>
+    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
     <div class="container">
         <nav class="nav">
-            <a href="index.html" class="nav-link">home</a>
+            <a href="index.html" class="nav-link" data-i18n="nav.home">home</a>
             <span class="nav-separator">/</span>
-            <a href="projects.html" class="nav-link">projects</a>
+            <a href="projects.html" class="nav-link" data-i18n="nav.projects">projects</a>
             <span class="nav-separator">/</span>
-            <a href="career.html" class="nav-link active">career</a>
+            <a href="career.html" class="nav-link active" data-i18n="nav.career">career</a>
         </nav>
 
         <header class="header">
@@ -29,7 +30,7 @@
                 <span class="prompt">$</span> cat career.md
             </div>
             <h1 class="name">career</h1>
-            <p class="tagline">// Where I've been, what I've built</p>
+            <p class="tagline" data-i18n="career.tagline">// Where I've been, what I've built</p>
         </header>
 
         <section class="section career">
@@ -40,19 +41,19 @@
                         <span class="career-company">Sushi Top Marketing</span>
                         <span class="career-period">2023 - Present</span>
                     </div>
-                    <p class="career-description">
+                    <p class="career-description" data-i18n="career.description">
                         Part of a fast-paced startup that scaled from seed to Series A in 2 years. Built high-throughput services in NestJS/TypeScript, Built custom indexer for company use. Architect and scale analytic systems. Manage some of the company infrastructure
                     </p>
                     <div class="career-highlights">
-                        <h4 class="highlights-title">Key responsibility:</h4>
+                        <h4 class="highlights-title" data-i18n="career.responsibility">Key responsibility:</h4>
                         <ul class="highlights-list">
-                            <li>Designed and architected backend systems to solve scaling, performance, and reliability challenges across Web3 products.</li>
-                            <li>Implemented efficient data pipelines and caching layers to handle high-volume transactions and reduce system bottlenecks.</li>
-                            <li>Built secure, high-availability APIs and services powering blockchain-based user flows, on-chain/off-chain interactions, and internal tooling.</li>
-                            <li>Collaborated closely with product, and frontend teams to define system requirements and ensure smooth cross-component integration.</li>
-                            <li>Conducted deep-dive debugging, performance tuning, and refactoring to maintain high system integrity as usage scaled.</li>
-                            <li>Ensured robust security practices across backend processes, including key management, API protection.</li>
-                            <li>Took ownership of key areas of the system roadmap, leading architectural planning and defining scalable patterns for the backend stack.</li>
+                            <li data-i18n="career.responsibility.1">Designed and architected backend systems to solve scaling, performance, and reliability challenges across Web3 products.</li>
+                            <li data-i18n="career.responsibility.2">Implemented efficient data pipelines and caching layers to handle high-volume transactions and reduce system bottlenecks.</li>
+                            <li data-i18n="career.responsibility.3">Built secure, high-availability APIs and services powering blockchain-based user flows, on-chain/off-chain interactions, and internal tooling.</li>
+                            <li data-i18n="career.responsibility.4">Collaborated closely with product, and frontend teams to define system requirements and ensure smooth cross-component integration.</li>
+                            <li data-i18n="career.responsibility.5">Conducted deep-dive debugging, performance tuning, and refactoring to maintain high system integrity as usage scaled.</li>
+                            <li data-i18n="career.responsibility.6">Ensured robust security practices across backend processes, including key management, API protection.</li>
+                            <li data-i18n="career.responsibility.7">Took ownership of key areas of the system roadmap, leading architectural planning and defining scalable patterns for the backend stack.</li>
                         </ul>
                     </div>
                     <div class="career-tech">
@@ -73,7 +74,7 @@
 
         <footer class="footer">
             <p>
-                <span class="prompt">$</span> cd ..
+                <span class="prompt">$</span> <span data-i18n="common.footer">cd ..</span>
                 <span class="cursor">_</span>
             </p>
         </footer>
