@@ -31,6 +31,9 @@ const translations = {
         'projects.tagline': '// Things I\'ve built and shipped',
         'projects.godex.description': 'godex is a Go SDK for indexing and processing blockchain data across multiple chains.',
         'projects.godex.live': 'live',
+        'projects.cella.description': 'Cella gives AI agents a controlled place to work: isolated execution, scoped permissions, mediated external actions, and inspectable evidence.',
+        'projects.cella.website': 'website',
+        'projects.cella.docs': 'docs',
         
         // Career page
         'career.tagline': '// Where I\'ve been, what I\'ve built',
@@ -113,6 +116,9 @@ const translations = {
         'projects.tagline': '// 構築・出荷したもの',
         'projects.godex.description': 'godexは、複数のチェーンにわたってブロックチェーンデータをインデックス化および処理するためのGo SDKです。',
         'projects.godex.live': 'ライブ',
+        'projects.cella.description': 'CellaはAIエージェントに制御された作業環境を提供します。実行環境の隔離、権限の明示、外部操作の仲介、操作記録の確認を一体で扱います。',
+        'projects.cella.website': 'サイト',
+        'projects.cella.docs': 'ドキュメント',
         
         // Career page
         'career.tagline': '// これまでの経歴と構築したもの',
